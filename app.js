@@ -12,10 +12,11 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 
 // TODO: Write your code here
 function sum(a,b){ //eslint-disable-line
-  var reuslt = a + b;
+
+  var result = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
 
-  return [message];
+  return [result,message];
 
 }
 
@@ -33,9 +34,15 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // TODO: Write your code here
-function multiply(a,b){ //eslint-disable-line
-
-}
+// function multiply(a,b){ //eslint-disable-line
+//
+//  var result = a*b;
+//  var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
+//
+//  return [result,message];
+//
+//
+// }
 
 // TODO: Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
