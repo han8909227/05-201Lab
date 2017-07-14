@@ -15,7 +15,7 @@ function sum(a,b){ //eslint-disable-line
   var result = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
 
-  return [message];
+  return [result,message];
 
 }
 
