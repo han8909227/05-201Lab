@@ -35,15 +35,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 
 function multiply(a,b){ //eslint-disable-line
-  var result = a*b;
+  var result = a * b;
   var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
 
   return [result,message];
 
-  var result = a*b;
-  var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
-
-  return [result,message];
 
 }
 
@@ -98,18 +94,18 @@ var numString = '';
 
 function sumArray(testArray){ //eslint-disable-line
 
-  for(var i=0;i<testArray.length;i++){
+  for(var i = 0; i < testArray.length;i++){
 
     totalSum = sum(totalSum,testArray[i])[0];
   }
 
 
- for(var i=0;i<testArray.length-1;i++){
-   numString = numString + testArray[i] + ',';
- }
+  for(i = 0; i < testArray.length - 1;i++){
+    numString = numString + testArray[i] + ',';
+  }
 
- numString = numString + testArray[testArray.length-1];
- var msg = numString + ' was passed in as an array of numbers, and ' + totalSum + ' is their sum.';
+  numString = numString + testArray[testArray.length - 1];
+  var msg = numString + ' was passed in as an array of numbers, and ' + totalSum + ' is their sum.';
 
   return [totalSum,msg];
 
@@ -140,19 +136,19 @@ var numString1 = '';
 
 function multiplyArray(testArray){ //eslint-disable-line
 
-  for(var i=0;i<testArray.length;i++){
+  for(var i = 0; i < testArray.length;i++){
     totalProd = multiply(totalProd,testArray[i])[0];
   }
 
-  for(var i=0;i<testArray.length-1;i++){
+  for(i = 0; i < testArray.length - 1;i++){
     numString1 = numString1 + testArray[i] + ',';
   }
 
-  numString1 = numString1 + testArray[testArray.length-1];
+  numString1 = numString1 + testArray[testArray.length - 1];
 
   var msg = 'The numbers ' + numString1 + ' have a product of ' + totalProd + '.';
 
-   return [totalProd,msg];
+  return [totalProd,msg];
 
 }
 
